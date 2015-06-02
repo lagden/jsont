@@ -1,0 +1,8 @@
+|{
+|  "emails":[
+each cliente, idx in clientes.cliente
+  - var commas = (idx) ? ',' : ''
+  |  #{commas}
+  |  "#{cliente.dados.email}"
+|  ]
+|}

@@ -1,0 +1,17 @@
+{
+    "clientes": {
+        "cliente": [{
+            "nome": "Thiago Lagden",
+            "dados": {
+                "telefone": "11 23456789",
+                "email": "lagden@gmail.com"
+            }
+        }, {
+            "nome": "Sabrina Magalhães",
+            "dados": {
+                "telefone": "11 98765432",
+                "email": "sabrina@gmail.com"
+            }
+        }]
+    }
+}

@@ -28,7 +28,7 @@ Utilizando o `original.json` como base:
 }
 ```
 
-Crie o seu novo **output** através de um novo template escrito em `jade`
+Crie o seu novo **output** através de um template escrito em `jade`
 
 ### Exemplo
 

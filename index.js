@@ -4,7 +4,11 @@
 
 var path = require('path');
 var fs = require('fs');
+var chalk = require('chalk');
 var promisify = require("es6-promisify");
+
+var error = chalk.bold.red;
+var ok = chalk.bold.green;
 
 var dust = require('dustjs-linkedin');
 var dustHelpers = require('dustjs-helpers');
@@ -34,7 +38,11 @@ function grava(obj) {
 jsont(filePrefix, tpl)
   .then(JSON.parse)
   .then(grava)
+  .then(function() {
+    process.stdout.write(ok('\u2714 ') + 'OK' + '\n');
+    process.exit(0);
+  })
   .catch(function(err) {
-    console.log(err);
+    process.stdout.write(error('\u2716 ') + err + '\n');
     process.exit(1);
   });

@@ -9,11 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^1.2.1",
+    "chalk": "^1.0.0",
     "dustjs-helpers": "^1.7.1",
     "dustjs-linkedin": "^2.7.2",
-    "es6-promisify": "^2.0.0",
-    "jade": "^1.10.0",
-    "rsvp": "^3.0.18"
+    "es6-promisify": "^2.0.0"
   }
 }

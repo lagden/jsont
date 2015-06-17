@@ -1,12 +1,10 @@
 # jsont
 
-Parse a JSON to another JSON
+> Transform a JSON to another JSON structure using template.
 
-## Usage
+## About
 
-**Atenção:** É apenas protótipo!
-
-Utilizando o `original.json` como base:
+Using the `original.json` as base:
 
 ```json
 {
@@ -28,9 +26,7 @@ Utilizando o `original.json` como base:
 }
 ```
 
-Crie o seu novo **output** através de um template escrito em `Dust`
-
-### Exemplo
+Create your new **structure** through of a template written in `Dust`
 
 **template/mkt.dust**
 
@@ -50,6 +46,14 @@ Crie o seu novo **output** através de um template escrito em `Dust`
 {
     "emails": ["lagden@gmail.com", "sabrina@gmail.com"]
 }
+```
+
+### Example
+
+Open the Shell an run:
+
+```
+PREFIX=users node --harmony index.js
 ```
 
 ## License

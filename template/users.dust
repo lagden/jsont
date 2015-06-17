@@ -1,0 +1,11 @@
+{
+  "usuario": [
+    {#clientes.cliente}
+      {
+        "nome": "{.nome}",
+        "telefone": "{.dados.telefone}",
+        "email": "{.dados.email}"
+      }{@sep}, {/sep}
+    {/clientes.cliente}
+  ]
+}

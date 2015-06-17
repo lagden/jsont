@@ -28,21 +28,20 @@ Utilizando o `original.json` como base:
 }
 ```
 
-Crie o seu novo **output** através de um template escrito em `jade`
+Crie o seu novo **output** através de um template escrito em `Dust`
 
 ### Exemplo
 
-**template/mkt.jade**
+**template/mkt.dust**
 
-```jade
-|{
-|  "emails":[
-each cliente, idx in clientes.cliente
-  - var commas = (idx) ? ',' : ''
-  |  #{commas}
-  |  "#{cliente.dados.email}"
-|  ]
-|}
+```dust
+{
+  "emails": [
+    {#clientes.cliente}
+      "{.dados.email}"{@sep}, {/sep}
+    {/clientes.cliente}
+  ]
+}
 ```
 
 **output/mkt.json**

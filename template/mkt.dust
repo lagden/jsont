@@ -1,0 +1,7 @@
+{
+  "emails": [
+    {#clientes.cliente}
+      "{.dados.email}"{@sep}, {/sep}
+    {/clientes.cliente}
+  ]
+}

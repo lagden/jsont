@@ -50,7 +50,7 @@ Create your new **structure** through of a template written in `Dust`
 
 ### Example
 
-Open the Shell and run:
+Open shell and run:
 
 ```
 PREFIX=users node --harmony index.js
